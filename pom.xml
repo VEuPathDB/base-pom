@@ -28,7 +28,6 @@
 
   <scm>
     <developerConnection>scm:git:ssh://github.com/VEuPathDB/base-pom</developerConnection>
-    <tag>v2.1</tag>
   </scm>
 
   <distributionManagement>

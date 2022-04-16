@@ -33,7 +33,7 @@
 
   <distributionManagement>
     <repository>
-      <id>veupathdb-packages</id>
+      <id>github</id>
       <url>https://maven.pkg.github.com/veupathdb/maven-packages</url>
     </repository>
   </distributionManagement>

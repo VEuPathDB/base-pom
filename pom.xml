@@ -32,10 +32,10 @@
   </scm>
 
   <distributionManagement>
-    <site>
+    <repository>
       <id>veupathdb-packages</id>
       <url>https://maven.pkg.github.com/veupathdb/maven-packages</url>
-    </site>
+    </repository>
   </distributionManagement>
 
   <developers>

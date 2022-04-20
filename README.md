@@ -4,30 +4,23 @@ Provides base project dependencies and build setup for VEuPathDB maven-based pro
 
 ## Release Procedure
 
-This project is set up to use the maven release plugin.  The latest version on HEAD should be kept as a SNAPSHOT version of the next release (e.g. 1.0-SNAPSHOT).  After changes are made that require a release, prepare the release:
+This project is set up to use the maven release plugin.  The latest version on HEAD should be kept as a SNAPSHOT version of the next release (e.g. 1.0-SNAPSHOT).  The `release.sh` script will streamline the release procedure, given the following prerequisites:
 
-1. Commit and push all changes
-2. Run `mvn -Dusername=git release:prepare`.  This will ask you three questions:
-  1. What version should be released?  Probably the SNAPSHOT version without SNAPSHOT, e.g. 1.0, but may jump to next major version
-  2. What tag name should be used to tag this commit?  Convention is 'v' + release, e.g. v1.0
-  3. What version should remain for the next development cycle?  This will be the next snapshot, e.g. 1.1-SNAPSHOT
-3. If your github credentials are set up correctly, this build should succeed.  It will have:
-  1. Changed the version of the pom to the release version and committed it under the chosen tag
-  2. Changed the version of the pom to the next SNAPSHOT version
-  3. Added local uncommitted files needed to perform the release
+1. You can currently push changes/tags to this repo (via SSH key or other credentials)
+2. Your github credentials are stored in the current environment ($GITHUB_USERNAME, $GITHUB_TOKEN)
+3. You have permission to deploy artifacts to Github Packages in the [maven-packages repo](https://github.com/VEuPathDB/maven-packages)
 
-After a successful 'release:prepare', you can perform the release.  To do so, you will need to declare your github username/token in ~/.m2/settings.xml, e.g.
-```
-<settings>
-  <servers>
-    <server>
-      <id>github</id>
-      <username>[your_github_username]</username>
-      <password>[your_github_token]</password>
-    </server>
-  </servers>
-</settings>
-```
+If so, then clone this repo and run `./release.sh`.  It will ask you three questions:
 
-1. Run `mvn release:perform`.  This should deploy the pom artifact to our Github Packages repository and clean up the directory
-2. You may notice some unpushed changes in your local checkout after 'release:perform' completes.  Please push these changes manually.
+1. What version should be released?
+    1. Probably the SNAPSHOT version without SNAPSHOT, e.g. 1.0, but may jump to next major version
+1. What tag name should be used to tag this commit?
+    1. Convention is 'v' + release, e.g. v1.0
+1. What version should remain for the next development cycle?
+    1. This will be the next snapshot, e.g. 1.1-SNAPSHOT
+
+After answering the questions, the release will proceed.  Afterward, the following should have occurred:
+
+1. The version of the pom is updated to the release version and tagged with the release tag
+1. The artifact is deployed to maven packages
+1. The version of the pom is updated to the new snapshot version for the next development cycle

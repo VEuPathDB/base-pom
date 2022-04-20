@@ -11,7 +11,7 @@ fi
 echo "Github credentials for $GITHUB_USERNAME found in environment"
 
 echo "Fetching settings.xml" \
-     && wget https://raw.githubusercontent.com/VEuPathDB/base-pom/main/settings.xml \
+     && curl -O https://raw.githubusercontent.com/VEuPathDB/base-pom/main/settings.xml \
      && echo "Preparing release..." \
      && mvn -Dusername=git release:prepare \
      && echo "Prepare successful; deploying artifacts" \

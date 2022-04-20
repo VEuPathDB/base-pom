@@ -104,7 +104,7 @@
       <name>VEuPathDB Libraries</name>
       <url>https://maven.pkg.github.com/veupathdb/maven-packages</url>
       <snapshots>
-	<enabled>false</enabled>
+        <enabled>false</enabled>
       </snapshots>
     </repository>
 
@@ -675,7 +675,7 @@
                 <goals>
                   <goal>attach-descriptor</goal>
                   <!-- disable actual site generation for now
-		  <goal>site</goal>
+                  <goal>site</goal>
                   <goal>stage</goal>
                   -->
                 </goals>
@@ -686,7 +686,7 @@
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-source-plugin</artifactId>
             <version>3.2.1</version>
-	    <executions>
+            <executions>
               <execution>
                 <id>attach-source</id>
                 <goals>
@@ -786,9 +786,10 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-release-plugin</artifactId>
         <version>3.0.0-M5</version>
-	<configuration>
-	  <releaseProfiles>release</releaseProfiles>
-	</configuration>
+        <configuration>
+          <releaseProfiles>release</releaseProfiles>
+          <tagNameFormat>v@{version}</tagNameFormat>
+        </configuration>
       </plugin>
     </plugins>
   </build>

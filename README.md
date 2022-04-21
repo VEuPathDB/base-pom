@@ -1,6 +1,30 @@
 # Base POM
 
-Provides base project dependencies and build setup for VEuPathDB maven-based projects.  The released POM should be used as a parent pom across all Maven-based VEuPathDB projects in an effort to standardize the libraries we use across the project and help ensure e.g. that transitive dependency conflicts are more easily managed.  To that end, this POM contains set version numbers for (hopefully) all libraries used by said projects.
+Provides base project dependencies and build setup for VEuPathDB maven-based projects.  The released POM should be used as a parent POM across all Maven-based VEuPathDB projects in an effort to standardize the libraries we use across the project and help ensure e.g. that transitive dependency conflicts are more easily managed.  To that end, this POM contains set version numbers for (hopefully) all libraries used by said projects.
+
+## Usage
+
+To use this in a new Maven-based Java projects, specify it as the parent POM:
+```
+  <parent>
+    <groupId>org.gusdb</groupId>
+    <artifactId>base-pom</artifactId>
+    <version>2.7</version>
+  </parent>
+```
+
+If you aren't already using other VEuPathDB libraries, you'll also need to add the VEuPathDB Maven repository:
+```
+  <repositories>
+    <repository>
+      <id>veupathdb</id>
+      <url>https://maven.pkg.github.com/VEuPathDB/maven-packages</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+```
 
 ## Release Procedure
 
@@ -21,6 +45,6 @@ If so, then clone this repo and run `./release.sh`.  It will ask you three quest
 
 After answering the questions, the release will proceed.  Afterward, the following should have occurred:
 
-1. The version of the pom is updated to the release version and tagged with the release tag
+1. The version of the POM is updated to the release version and tagged with the release tag
 1. The artifact is deployed to maven packages
-1. The version of the pom is updated to the new snapshot version for the next development cycle
+1. The version of the POM is updated to the new snapshot version for the next development cycle

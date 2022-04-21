@@ -92,7 +92,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.version>11</java.version>
-    <jersey.version>2.35</jersey.version>
+    <jersey.version>3.0.4</jersey.version>
     <jackson.version>2.12.2</jackson.version>
     <oltu.version>1.0.0</oltu.version>
   </properties>
@@ -383,11 +383,6 @@
       </dependency>
 
       <!-- JAX-RS / RESTful Web Services -->
-      <dependency>
-        <groupId>javax.ws.rs</groupId>
-        <artifactId>javax.ws.rs-api</artifactId>
-        <version>2.0</version>
-      </dependency>
       <dependency>
         <groupId>org.glassfish.jersey.core</groupId>
         <artifactId>jersey-server</artifactId>

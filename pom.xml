@@ -375,6 +375,13 @@
         <version>1.4.7</version>
       </dependency>
 
+      <!-- SQL Templating -->
+      <dependency>
+        <groupId>org.mybatis</groupId>
+        <artifactId>mybatis</artifactId>
+        <version>3.5.11</version>
+      </dependency>
+
       <!-- Database Pooling -->
       <dependency>
         <groupId>org.apache.commons</groupId>

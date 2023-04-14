@@ -388,6 +388,13 @@
         <artifactId>commons-dbcp2</artifactId>
         <version>2.9.0</version>
       </dependency>
+      
+      <!-- Postgres JDBC Driver -->
+      <dependency>
+        <groupId>org.postgresql</groupId>
+        <artifactId>postgresql</artifactId>
+        <version>42.6.0</version>
+      </dependency>
 
       <!-- JAX-RS / RESTful Web Services -->
       <dependency>

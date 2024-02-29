@@ -6,7 +6,7 @@
 
   <groupId>org.gusdb</groupId>
   <artifactId>base-pom</artifactId>
-  <version>2.20-jakarta</version>
+  <version>2.21-jakarta-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <licenses>
@@ -28,7 +28,7 @@
 
   <scm>
     <developerConnection>scm:git:ssh://github.com/VEuPathDB/base-pom</developerConnection>
-    <tag>v2.20-jakarta</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <distributionManagement>

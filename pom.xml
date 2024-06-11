@@ -91,7 +91,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <java.version>11</java.version>
+    <java.version>21</java.version>
     <jersey.version>2.41</jersey.version>
     <jackson.version>2.15.4</jackson.version>
   </properties>
@@ -503,11 +503,11 @@
         <version>5.9</version>
       </dependency>
 
-      <!-- Standard Servlet API (2.5 matches Tomcat 6.x) -->
+      <!-- Standard Servlet API (4.0 matches Tomcat 9.x) -->
       <dependency>
         <groupId>javax.servlet</groupId>
-        <artifactId>servlet-api</artifactId>
-        <version>2.5</version>
+        <artifactId>javax.servlet-api</artifactId>
+        <version>4.0.1</version>
         <scope>provided</scope>
       </dependency>
 
@@ -526,7 +526,7 @@
       <!-- Contains context listener used to prevent classloader memory leaks -->
       <dependency>
         <groupId>se.jiderhamn.classloader-leak-prevention</groupId>
-        <artifactId>classloader-leak-prevention-servlet</artifactId>
+        <artifactId>classloader-leak-prevention-servlet3</artifactId>
         <version>2.7.0</version>
       </dependency>
 

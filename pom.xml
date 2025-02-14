@@ -515,12 +515,12 @@
       <dependency>
         <groupId>org.graalvm.js</groupId>
         <artifactId>js</artifactId>
-        <version>23.0.7</version>
+        <version>22.3.5</version>
       </dependency>
       <dependency>
         <groupId>org.graalvm.js</groupId>
         <artifactId>js-scriptengine</artifactId>
-        <version>23.0.7</version>
+        <version>22.3.5</version>
       </dependency>
 
       <!-- Contains context listener used to prevent classloader memory leaks -->

@@ -92,8 +92,8 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.version>21</java.version>
-    <jersey.version>2.46</jersey.version>
-    <jackson.version>2.18.3</jackson.version>
+    <jersey.version>2.47</jersey.version>
+    <jackson.version>2.21.0</jackson.version>
   </properties>
 
   <repositories>
@@ -143,12 +143,12 @@
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-lang3</artifactId>
-        <version>3.17.0</version>
+        <version>3.20.0</version>
       </dependency>
       <dependency>
         <groupId>commons-io</groupId>
         <artifactId>commons-io</artifactId>
-        <version>2.18.0</version>
+        <version>2.21.0</version>
       </dependency>
       <dependency>
         <groupId>io.vulpine.lib</groupId>
@@ -158,14 +158,14 @@
       <dependency>
         <groupId>com.github.ben-manes.caffeine</groupId>
         <artifactId>caffeine</artifactId>
-        <version>3.2.0</version>
+        <version>3.2.3</version>
       </dependency>
 
       <!-- JSON Parsing -->
       <dependency>
         <groupId>org.json</groupId>
         <artifactId>json</artifactId>
-        <version>20250107</version>
+        <version>20251224</version>
       </dependency>
       <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
@@ -337,7 +337,7 @@
       <dependency>
         <groupId>args4j</groupId>
         <artifactId>args4j</artifactId>
-        <version>2.33</version>
+        <version>2.37</version>
       </dependency>
       <dependency>
         <groupId>org.semanticweb</groupId>
@@ -349,14 +349,14 @@
       <dependency>
         <groupId>commons-cli</groupId>
         <artifactId>commons-cli</artifactId>
-        <version>1.9.0</version>
+        <version>1.11.0</version>
       </dependency>
 
       <!-- Encryption Utils -->
       <dependency>
         <groupId>commons-codec</groupId>
         <artifactId>commons-codec</artifactId>
-        <version>1.18.0</version>
+        <version>1.20.0</version>
       </dependency>
 
       <!-- Email Support -->
@@ -370,14 +370,14 @@
       <dependency>
         <groupId>org.mybatis</groupId>
         <artifactId>mybatis</artifactId>
-        <version>3.5.15</version>
+        <version>3.5.19</version>
       </dependency>
 
       <!-- Database Pooling -->
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-dbcp2</artifactId>
-        <version>2.13.0</version>
+        <version>2.14.0</version>
       </dependency>
 
       <!-- LDAP Support -->
@@ -391,7 +391,7 @@
       <dependency>
         <groupId>org.postgresql</groupId>
         <artifactId>postgresql</artifactId>
-        <version>42.7.5</version>
+        <version>42.7.9</version>
       </dependency>
 
       <!-- JAX-RS / RESTful Web Services -->
@@ -471,22 +471,16 @@
       <dependency>
         <groupId>commons-fileupload</groupId>
         <artifactId>commons-fileupload</artifactId>
-        <version>1.5</version>
-        <exclusions>
-          <exclusion>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-          </exclusion>
-        </exclusions>
+        <version>1.6.0</version>
       </dependency>
 
-      <!-- IRODS Client - Depregated in the wake of VDI adoption -->
+      <!-- IRODS Client - Deprecated in the wake of VDI adoption -->
       <!-- Note: to use IRODS you must also depend explicitly on either -->
       <!--       log4j 1.2 or log4j2 and its 1.2 bridge (see below)     -->
       <dependency>
         <groupId>org.irods.jargon</groupId>
         <artifactId>jargon-core</artifactId>
-        <version>4.3.2.5-RELEASE</version>
+        <version>4.3.7.0-RELEASE</version>
         <exclusions>
           <exclusion>
             <groupId>org.bouncycastle</groupId>
@@ -507,19 +501,19 @@
       <dependency>
         <groupId>com.opencsv</groupId>
         <artifactId>opencsv</artifactId>
-        <version>5.10</version>
+        <version>5.12.0</version>
       </dependency>
 
       <!-- AI Clients -->
       <dependency>
         <groupId>com.openai</groupId>
         <artifactId>openai-java</artifactId>
-        <version>4.6.1</version>
+        <version>4.15.0</version>
       </dependency>
       <dependency>
         <groupId>com.anthropic</groupId>
         <artifactId>anthropic-java</artifactId>
-        <version>2.9.0</version>
+        <version>2.11.1</version>
       </dependency>
 
       <!-- Standard Servlet API (4.0 matches Tomcat 9.x) -->
@@ -534,12 +528,12 @@
       <dependency>
         <groupId>org.graalvm.js</groupId>
         <artifactId>js</artifactId>
-        <version>22.3.5</version>
+        <version>25.0.2</version>
       </dependency>
       <dependency>
         <groupId>org.graalvm.js</groupId>
         <artifactId>js-scriptengine</artifactId>
-        <version>22.3.5</version>
+        <version>25.0.2</version>
       </dependency>
 
       <!-- Contains context listener used to prevent classloader memory leaks -->
@@ -558,39 +552,39 @@
       <dependency>
         <groupId>org.hsqldb</groupId>
         <artifactId>hsqldb</artifactId>
-        <version>2.7.2</version>
+        <version>2.7.4</version>
       </dependency>
       <dependency>
         <groupId>org.htmlunit</groupId>
         <artifactId>htmlunit</artifactId>
-        <version>4.10.0</version>
+        <version>4.21.0</version>
       </dependency>
       <dependency>
         <groupId>org.testng</groupId>
         <artifactId>testng</artifactId>
-        <version>6.8.21</version>
+        <version>6.14.3</version>
       </dependency>
       <dependency>
         <groupId>org.seleniumhq.selenium</groupId>
         <artifactId>selenium-java</artifactId>
-        <version>4.29.0</version>
+        <version>4.40.0</version>
       </dependency>
       <dependency>
         <groupId>org.mockito</groupId>
         <artifactId>mockito-core</artifactId>
-        <version>5.15.2</version>
+        <version>5.21.0</version>
       </dependency>
 
       <!-- Logging -->
       <dependency>
         <groupId>org.apache.logging.log4j</groupId>
         <artifactId>log4j-core</artifactId>
-        <version>2.24.3</version>
+        <version>2.25.3</version>
       </dependency>
       <dependency>
         <groupId>org.apache.logging.log4j</groupId>
         <artifactId>log4j-1.2-api</artifactId>
-        <version>2.24.3</version>
+        <version>2.25.3</version>
       </dependency>
 
       <!-- Reflections -->
@@ -638,7 +632,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-site-plugin</artifactId>
-            <version>3.12.1</version>
+            <version>3.21.0</version>
             <executions>
               <execution>
                 <goals>
@@ -654,7 +648,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-source-plugin</artifactId>
-            <version>3.3.0</version>
+            <version>3.4.0</version>
             <executions>
               <execution>
                 <id>attach-source</id>
@@ -667,7 +661,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-javadoc-plugin</artifactId>
-            <version>3.6.3</version>
+            <version>3.12.0</version>
             <executions>
               <execution>
                 <id>attach-javadoc</id>
@@ -687,7 +681,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.12.1</version>
+        <version>3.14.1</version>
         <configuration>
           <source>${java.version}</source>
           <target>${java.version}</target>
@@ -696,7 +690,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
-        <version>3.3.0</version>
+        <version>3.5.0</version>
         <configuration>
           <archive>
             <addMavenDescriptor>false</addMavenDescriptor>
@@ -706,12 +700,12 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
-        <version>3.4.0</version>
+        <version>3.5.1</version>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-help-plugin</artifactId>
-        <version>3.3.0</version>
+        <version>3.5.1</version>
         <executions>
           <execution>
             <phase>generate-resources</phase>
@@ -754,11 +748,16 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-release-plugin</artifactId>
-        <version>3.0.1</version>
+        <version>3.3.1</version>
         <configuration>
           <releaseProfiles>release</releaseProfiles>
           <tagNameFormat>v@{version}</tagNameFormat>
         </configuration>
+      </plugin>
+      <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>versions-maven-plugin</artifactId>
+          <version>2.21.0</version>
       </plugin>
     </plugins>
   </build>
@@ -768,7 +767,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-project-info-reports-plugin</artifactId>
-        <version>3.5.0</version>
+        <version>3.9.0</version>
         <reportSets>
           <reportSet>
             <reports>
@@ -792,7 +791,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.4.1</version>
+        <version>3.12.0</version>
         <reportSets>
           <reportSet>
             <reports>
@@ -804,7 +803,7 @@
       <plugin>
         <groupId>com.github.spotbugs</groupId>
         <artifactId>spotbugs-maven-plugin</artifactId>
-        <version>4.8.3.1</version>
+        <version>4.9.8.2</version>
         <reportSets>
           <reportSet>
             <reports>

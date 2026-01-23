@@ -6,7 +6,7 @@
 
   <groupId>org.gusdb</groupId>
   <artifactId>base-pom</artifactId>
-  <version>3.1-SNAPSHOT</version>
+  <version>3.1-jakarta-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <licenses>
@@ -68,7 +68,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.version>21</java.version>
-    <jersey.version>2.47</jersey.version>
+    <jersey.version>3.1.11</jersey.version>
     <jackson.version>2.21.0</jackson.version>
   </properties>
 
@@ -484,11 +484,11 @@
         <version>2.11.1</version>
       </dependency>
 
-      <!-- Standard Servlet API (4.0 matches Tomcat 9.x) -->
+      <!-- Standard Servlet API (6.0 matches Tomcat 10.1.x) -->
       <dependency>
-        <groupId>javax.servlet</groupId>
-        <artifactId>javax.servlet-api</artifactId>
-        <version>4.0.1</version>
+        <groupId>jakarta.servlet</groupId>
+        <artifactId>jakarta.servlet-api</artifactId>
+        <version>6.0.0</version>
         <scope>provided</scope>
       </dependency>
 

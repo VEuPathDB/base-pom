@@ -205,7 +205,7 @@
       <dependency>
         <groupId>com.github.java-json-tools</groupId>
         <artifactId>json-schema-validator</artifactId>
-        <version>2.2.10</version>
+        <version>2.2.14</version>
         <exclusions>
           <!-- Exclude this lib so we can use fixed version below -->
           <exclusion>
@@ -283,7 +283,7 @@
       <dependency>
         <groupId>com.itextpdf</groupId>
         <artifactId>itextpdf</artifactId>
-        <version>5.5.13.4</version>
+        <version>5.5.13.5</version>
       </dependency>
 
       <!-- Ontology Support -->
@@ -476,7 +476,7 @@
       <dependency>
         <groupId>com.openai</groupId>
         <artifactId>openai-java</artifactId>
-        <version>4.15.0</version>
+        <version>4.16.0</version>
       </dependency>
       <dependency>
         <groupId>com.anthropic</groupId>

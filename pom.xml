@@ -209,7 +209,7 @@
         <exclusions>
           <!-- Exclude this lib so we can use fixed version below -->
           <exclusion>
-            <groupId>com.github.fge</groupId>
+            <groupId>com.github.java-json-tools</groupId>
             <artifactId>msg-simple</artifactId>
           </exclusion>
           <!-- Included version 1.4.3 has runtime conflicts with 1.4.7 -->
@@ -658,7 +658,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
-        <version>3.5.0</version>
+        <version>3.4.2</version>
         <configuration>
           <archive>
             <addMavenDescriptor>false</addMavenDescriptor>

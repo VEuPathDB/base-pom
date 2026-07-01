@@ -639,7 +639,7 @@
           <source>${java.version}</source>
           <target>${java.version}</target>
         </configuration>
-	<executions>
+        <executions>
           <execution>
             <id>default-compile</id>
             <configuration>

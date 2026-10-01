@@ -328,6 +328,13 @@
         <version>1.11.0</version>
       </dependency>
 
+      <!-- NCBI Blast CLI Pojos -->
+      <dependency>
+        <groupId>org.veupathdb.lib</groupId>
+        <artifactId>java-blast</artifactId>
+        <version>5.0.9</version>
+      </dependency>
+
       <!-- Encryption Utils -->
       <dependency>
         <groupId>commons-codec</groupId>
